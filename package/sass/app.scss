@@ -5,11 +5,6 @@ $gray: #777;
 
 @font-face {
     font-family: "Roboto Condensed";
-    src: url("../vendor/Roboto-Condensed/RobotoCondensed-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Roboto Condensed";
     src: url("../vendor/Roboto-Condensed/RobotoCondensed-Bold.ttf");
     font-weight: bold;
 }
@@ -46,7 +41,7 @@ a, input {
 
 a {
     &, &:link {
-        color: red;
+        color: gray;
         text-decoration: none;
         cursor: pointer;
     }
@@ -64,7 +59,7 @@ ul li {
         &::before {
             font-family: FontAwesome;
             font-weight: normal;
-            content: "\f071 "; // warning icon
+            content: "\f071 "; // warning icon
         }
     }
 }
@@ -133,8 +128,12 @@ section.log {
     }
 }
 
-section.source a::before {
-    font-family: FontAwesome;
-    font-weight: normal;
-    content: " "; // link icon
+p.source {
+    margin-top: 20px;
+
+    a::before {
+        font-family: FontAwesome;
+        font-weight: normal;
+        content: "\f08e "; // link icon
+    }
 }
