@@ -37,7 +37,7 @@ Coding conventions
 
       + `package.json`
 
-      + `bower.json`
+      + `package/manifest.webapp`
 
 
 License
