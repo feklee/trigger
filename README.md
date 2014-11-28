@@ -4,7 +4,7 @@ About
 *Trigger* is a Firefox OS app for remotely triggering the shutters of cameras
 connected by [PTP/IP][1].
 
-Check [Firefox Markteplace][2].
+It is available on [Firefox Marketplace][2].
 
 
 Development
@@ -68,5 +68,5 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [1]: https://en.wikipedia.org/wiki/Picture_Transfer_Protocol
-[2]: https://marketplace.firefox.com/
+[2]: https://marketplace.firefox.com/app/trigger
 [3]: http://gruntjs.com/
