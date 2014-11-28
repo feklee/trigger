@@ -1,6 +1,7 @@
 @import "reset";
 
 $colon-spacing: 5px;
+$icon-spacing: 5px;
 $gray: #777;
 
 @font-face {
@@ -41,7 +42,7 @@ a, input {
 
 a {
     &, &:link {
-        color: gray;
+        color: $gray;
         text-decoration: none;
         cursor: pointer;
     }
@@ -59,7 +60,8 @@ ul li {
         &::before {
             font-family: FontAwesome;
             font-weight: normal;
-            content: "\f071 "; // warning icon
+            content: "\f071"; // warning icon
+            padding-right: $icon-spacing;
         }
     }
 }
@@ -134,6 +136,7 @@ p.source {
     a::before {
         font-family: FontAwesome;
         font-weight: normal;
-        content: "\f08e "; // link icon
+        content: "\f08e"; // link icon
+        padding-right: $icon-spacing;
     }
 }
