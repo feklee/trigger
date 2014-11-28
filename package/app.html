@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Trigger</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+  </head>
+
+  <body>
+    <ul>
+      <li class="important">
+        Make sure that the camera is in the same network as the device running
+        this app.
+      </li>
+
+      <li>
+        Camera address:
+        <input type="text"
+               value="192.168.1.1"
+               class="host">
+      </li>
+
+      <li>
+        PTP/IP Port:
+        <input type="text"
+               value="15740"
+               class="port">
+      </li>
+
+      <li class="connect button">Connect</li>
+
+      <li class="disabled trigger button">Trigger shutter</li>
+    </ul>
+
+    <section class="log">
+      <h1>Log</h1>
+      <ol reversed>
+        <li>
+          <span>Waiting for your action…</span>
+        </li>
+      </ol>
+    </section>
+
+    <section class="source">
+      <h1>Source code</h1>
+      <a href="https://github.com/feklee/trigger">github.com</a>
+    </section>
+
+    <!-- [remove-in-production] -->
+    <script src="bower_components/requirejs/require.js"></script>
+    <script src="config.js"></script>
+    <!-- [/remove-in-production] -->
+    <!-- [insert-script-in-production /] -->
+  </body>
+</html>

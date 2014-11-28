@@ -1,0 +1,140 @@
+@import "reset";
+
+$colon-spacing: 5px;
+
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url("../vendor/Roboto-Condensed/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url("../vendor/Roboto-Condensed/RobotoCondensed-Regular.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url("../bower_components/font-awesome/fonts/fontawesome-webfont.ttf");
+    font-weight: bold;
+}
+
+html {
+    -moz-user-select: none;
+    user-select: none;
+}
+
+body {
+    margin: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    min-width: 300px;
+
+    * {
+        cursor: default;
+    }
+}
+
+a, input {
+    outline: 0;
+}
+
+a {
+    &, &:link {
+        color: red;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.button, label {
+    cursor: pointer;
+}
+
+ul li {
+    margin: 10px 0;
+
+    &.important {
+        color: red;
+        &::before {
+            font-family: FontAwesome;
+            font-weight: normal;
+            content: "\f071"; // warning icon
+        }
+    }
+}
+
+input, .button {
+    background: transparent;
+    color: white;
+    margin-left: 0;
+    margin-right: 0;
+    border: 1px solid white;
+    font: inherit;
+
+    &.host {
+        width: 120px
+    }
+
+    &.port {
+        width: 50px;
+    }
+
+    &.connect, &.trigger {
+        width: 130px;
+    }
+}
+
+input {
+    padding: 0 1px;
+    margin-left: $colon-spacing;
+    border-radius: 0;
+    cursor: text;
+    -moz-user-select: text;
+    user-select: text;
+}
+
+.button {
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+
+    &.disabled {
+        cursor: default;
+        display: none;
+    }
+}
+
+h1 {
+    font-size: 1.4em;
+    margin: 20px 0 10px 0;
+}
+
+section.log {
+    ol {
+        list-style: decimal inside;
+    }
+
+    li {
+        color: red;
+    }
+
+    li > span {
+        color: white;
+
+        &.error {
+            color: red;
+        }
+    }
+}
+
+section.source a::before {
+    margin-left: $colon-spacing;
+    font-family: FontAwesome;
+    font-weight: normal;
+    content: " "; // link icon
+}

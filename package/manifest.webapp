@@ -1,0 +1,21 @@
+{
+    "name": "Trigger",
+    "description": "Triggers the shutter of a camera connected by PTP/IP",
+    "launch_path": "/app.html",
+    "icons": {
+        "64": "/images/icon-64.png",
+        "128": "/images/icon-128.png",
+        "512": "/images/icon-512.png"
+    },
+    "developer": {
+        "name": "Developers of ptp.js",
+        "url": "http://example.com"
+    },
+    "default_locale": "en",
+    "type": "privileged",
+    "permissions" : {
+        "tcp-socket" : {
+            "description" : "Create TCP sockets and communicate over them."
+        }
+    }
+}
