@@ -24,7 +24,7 @@ onCreateZipSuccess = function (zipPath) {
 };
 
 onProcessHtmlSuccess = function (optimizedPackagePath) {
-    require('./create-zip')({
+    require('./lib/create-zip')({
         optimizedPackagePath: optimizedPackagePath,
         onSuccess: onCreateZipSuccess,
         onError: onError
@@ -32,7 +32,7 @@ onProcessHtmlSuccess = function (optimizedPackagePath) {
 };
 
 onOptimizeSuccess = function (optimizedPackagePath) {
-    require('./process-html')({
+    require('./lib/process-html')({
         optimizedPackagePath: optimizedPackagePath,
         onSuccess: onProcessHtmlSuccess,
         onError: onError
@@ -40,13 +40,13 @@ onOptimizeSuccess = function (optimizedPackagePath) {
 };
 
 onTmpDirSuccess = function (tmpDirPath) {
-    require('./optimize')({
+    require('./lib/optimize')({
         optimizedPackagePath: path.resolve(tmpDirPath, 'package'),
         onSuccess: onOptimizeSuccess
     });
 };
 
-require('./create-tmp-dir')({
+require('./lib/create-tmp-dir')({
     onSuccess: onTmpDirSuccess,
     onError: onError
 });

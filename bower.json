@@ -1,10 +1,11 @@
 {
-    "name": "trigger",
-    "version": "1.0.0",
-    "dependencies": {
-        "ptp.js": "2.x",
-        "requirejs": "2.x",
-        "font-awesome": "4.2.x"
-    },
-    "private": true
+  "name": "trigger",
+  "version": "1.0.0",
+  "dependencies": {
+    "ptp.js": "2.x",
+    "requirejs": "2.x",
+    "font-awesome": "4.2.x",
+    "almond": "~0.3.0"
+  },
+  "private": true
 }

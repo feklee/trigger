@@ -21,6 +21,9 @@ module.exports = function (grunt) {
                 }
             }
         },
+        create-zip: {
+            // TODO
+        },
         watch: {
             scripts: {
                 files: 'package/sass/*.scss',
