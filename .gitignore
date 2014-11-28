@@ -2,3 +2,4 @@ node_modules
 package/bower_components
 npm-debug.log
 package.zip
+.sass-cache

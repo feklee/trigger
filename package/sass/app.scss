@@ -1,6 +1,7 @@
 @import "reset";
 
 $colon-spacing: 5px;
+$gray: #777;
 
 @font-face {
     font-family: "Roboto Condensed";
@@ -9,7 +10,7 @@ $colon-spacing: 5px;
 
 @font-face {
     font-family: "Roboto Condensed";
-    src: url("../vendor/Roboto-Condensed/RobotoCondensed-Regular.ttf");
+    src: url("../vendor/Roboto-Condensed/RobotoCondensed-Bold.ttf");
     font-weight: bold;
 }
 
@@ -63,7 +64,7 @@ ul li {
         &::before {
             font-family: FontAwesome;
             font-weight: normal;
-            content: "\f071"; // warning icon
+            content: "\f071 "; // warning icon
         }
     }
 }
@@ -90,7 +91,7 @@ input, .button {
 }
 
 input {
-    padding: 0 1px;
+    padding: 2px 4px;
     margin-left: $colon-spacing;
     border-radius: 0;
     cursor: text;
@@ -120,7 +121,7 @@ section.log {
     }
 
     li {
-        color: red;
+        color: $gray;
     }
 
     li > span {
@@ -133,7 +134,6 @@ section.log {
 }
 
 section.source a::before {
-    margin-left: $colon-spacing;
     font-family: FontAwesome;
     font-weight: normal;
     content: " "; // link icon
