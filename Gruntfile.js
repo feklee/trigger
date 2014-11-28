@@ -21,9 +21,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-        create-zip: {
-            // TODO
-        },
         watch: {
             scripts: {
                 files: 'package/sass/*.scss',
@@ -35,7 +32,6 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-bower-requirejs');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
