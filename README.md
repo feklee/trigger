@@ -13,7 +13,8 @@ Development
 Grunt
 -----
 
-  * Run [Grunt][3] to create the package for distribution on Firefox Marketplace.
+  * Planned: Run [Grunt][3] to create the package for distribution on Firefox
+    Marketplace.
 
   * Run `grunt watch` to keep CSS updated during development.
 
