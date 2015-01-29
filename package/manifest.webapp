@@ -18,5 +18,5 @@
             "description" : "Create TCP sockets and communicate over them."
         }
     },
-    "version": "1.0.4"
+    "version": "1.0.5"
 }
