@@ -28,11 +28,12 @@ Coding conventions
   * Avoid constructors (JS is classless), don’t throw exceptions (not necessary
     in JS).
 
-  * Versioning: major.minor.bug-fix
+  * Version numbers: [major.minor.patch][4]
 
-    Incompatible changes to the API mandate an update of the major version.
+Publishing a new version
+------------------------
 
-    Keep version up to date in:
+  * Keep version up to date in:
 
       + Git tags
 
@@ -40,6 +41,11 @@ Coding conventions
 
       + `package/manifest.webapp`
 
+  * Publish to:
+
+      + [github.com/feklee/trigger][5]
+
+      + Firefox Marketplace: [Trigger][6]
 
 License
 =======
@@ -71,3 +77,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [1]: https://en.wikipedia.org/wiki/Picture_Transfer_Protocol
 [2]: https://marketplace.firefox.com/app/trigger
 [3]: http://gruntjs.com/
+[4]: http://semver.org/
+[5]: https://github.com/feklee/trigger
+[6]: https://marketplace.firefox.com/app/trigger
